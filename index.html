@@ -1,241 +1,35 @@
-
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>MINAS SEGURAS | Transparência Ambiental</title>
-<style>
-:root {
-  --bg:#071b17;
-  --panel:#102b25;
-  --green:#7cdda7;
-  --text:#edf7f0;
-  --muted:#a6bcb0;
-}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;font-family:Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
-header{position:sticky;top:0;z-index:10;background:#071b17ed;border-bottom:1px solid #29483d}
-nav{max-width:1150px;margin:auto;padding:17px 22px;display:flex;justify-content:space-between;align-items:center;gap:15px;flex-wrap:wrap}
-.logo{font-size:21px;font-weight:900;letter-spacing:1px;color:var(--green)}
-nav a{color:#e5f3e9;text-decoration:none;margin:0 9px;font-size:14px}
-nav a:hover{color:var(--green)}
-.hero{min-height:520px;display:flex;align-items:center;padding:75px 25px;background:linear-gradient(90deg,#061b17f5,#061b1790),url('https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=1600&q=85') center/cover}
-.wrap{max-width:1150px;margin:auto;width:100%}
-.eyebrow{color:var(--green);font-weight:bold;text-transform:uppercase;letter-spacing:2px;font-size:12px}
-h1{font-size:clamp(38px,6vw,70px);line-height:1.08;max-width:850px;margin:16px 0}
-h2{font-size:clamp(26px,4vw,38px);line-height:1.2}
-p{color:var(--muted)}
-.hero p{max-width:620px;font-size:18px}
-.btn{display:inline-block;border:0;border-radius:9px;padding:13px 22px;background:var(--green);color:#092119;font-weight:bold;text-decoration:none;cursor:pointer}
-.btn:hover{background:#b0f5c9}
-section{padding:75px 22px}
-.alt{background:#0b231d}
-.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
-.card{background:var(--panel);border:1px solid #2b4a3c;border-radius:15px;padding:25px}
-.card h3{color:#eaf9ed}
-.card img{width:100%;height:190px;object-fit:cover;border-radius:10px}
-.tag{color:var(--green);font-size:12px;font-weight:bold;text-transform:uppercase}
-input,select,textarea{width:100%;padding:13px;margin:8px 0 16px;border-radius:8px;border:1px solid #456458;background:#071b17;color:white;font:inherit}
-label{font-weight:bold;font-size:14px}
-.result{margin-top:15px;padding:18px;background:#183a30;border-radius:10px}
-footer{text-align:center;padding:30px;border-top:1px solid #2b4a3c;color:var(--muted)}
-.small{font-size:13px}
-@media(max-width:750px){
- .grid{grid-template-columns:1fr}
- nav{justify-content:center;text-align:center}
- nav div:last-child{display:flex;flex-wrap:wrap;justify-content:center}
- nav a{margin:5px}
- section{padding:50px 18px}
- .hero{min-height:460px}
-}
-</style>
-</head>
-<body>
-
-<header>
-<nav>
-<div class="logo">◆ MINAS SEGURAS</div>
-<div>
-<a href="#inicio">Início</a>
-<a href="#problema">O problema</a>
-<a href="#consulta">Consultar</a>
-<a href="#direitos">Direitos</a>
-<a href="#avaliacao">Avaliar</a>
-</div>
-</nav>
-</header>
-
-<main>
-<section class="hero" id="inicio">
-<div class="wrap">
-<div class="eyebrow">Constituição • Democracia • Meio Ambiente</div>
-<h1>Informação que protege. Transparência que transforma.</h1>
-<p>Uma plataforma educacional para facilitar o acesso às informações sobre barragens de mineração, fiscalização ambiental e direitos das comunidades de Minas Gerais.</p>
-<a class="btn" href="#consulta">Explorar plataforma →</a>
-</div>
-</section>
-
-<section id="problema">
-<div class="wrap">
-<div class="eyebrow">Por que existimos?</div>
-<h2>O direito à informação também protege vidas.</h2>
-<p>Informações sobre barragens podem estar distribuídas em diferentes sistemas e documentos técnicos. Nosso projeto busca tornar esse conteúdo mais acessível e compreensível.</p>
-<div class="grid">
-<div class="card">
-<img src="https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=700&q=80" alt="Floresta">
-<h3>Proteção ambiental</h3>
-<p>A prevenção de danos ambientais depende de fiscalização, responsabilidade e participação social.</p>
-</div>
-<div class="card">
-<img src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=700&q=80" alt="Paisagem natural">
-<h3>Transparência</h3>
-<p>O cidadão deve conseguir encontrar informações públicas e compreender o significado dos dados divulgados.</p>
-</div>
-<div class="card">
-<img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=700&q=80" alt="Natureza">
-<h3>Participação democrática</h3>
-<p>Comunidades informadas podem acompanhar políticas públicas e cobrar medidas dos órgãos responsáveis.</p>
-</div>
-</div>
-</div>
-</section>
-
-<section class="alt" id="consulta">
-<div class="wrap">
-<div class="eyebrow">Consulta pública</div>
-<h2>Pesquise informações sobre barragens</h2>
-<p>Selecione um município para acessar fontes oficiais de pesquisa. Esta primeira versão não apresenta classificações de risco em tempo real.</p>
-<div class="card">
-<label for="cidade">Município de interesse</label>
-<select id="cidade">
-<option value="">Selecione um município</option>
-<option>Brumadinho</option>
-<option>Betim</option>
-<option>Nova Lima</option>
-<option>Itabirito</option>
-<option>Mariana</option>
-<option>Ouro Preto</option>
-</select>
-<button class="btn" onclick="consultar()">Consultar município</button>
-<div id="resultado" class="result" hidden aria-live="polite"></div>
-</div>
-</div>
-</section>
-
-<section id="direitos">
-<div class="wrap">
-<div class="eyebrow">Fundamentação jurídica</div>
-<h2>Conheça seus direitos ambientais</h2>
-<div class="grid">
-<div class="card">
-<div class="tag">Constituição Federal</div>
-<h3>Artigo 225</h3>
-<p>Estabelece o direito ao meio ambiente ecologicamente equilibrado e o dever de protegê-lo.</p>
-<a class="btn" href="https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm" target="_blank" rel="noopener noreferrer">Consultar</a>
-</div>
-<div class="card">
-<div class="tag">Lei 12.527/2011</div>
-<h3>Acesso à Informação</h3>
-<p>Regulamenta o direito de acesso às informações públicas e estabelece mecanismos de transparência.</p>
-<a class="btn" href="https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2011/lei/l12527.htm" target="_blank" rel="noopener noreferrer">Consultar</a>
-</div>
-<div class="card">
-<div class="tag">Lei 12.334/2010</div>
-<h3>Segurança de Barragens</h3>
-<p>Estabelece a Política Nacional de Segurança de Barragens, posteriormente alterada por outras normas.</p>
-<a class="btn" href="https://www.planalto.gov.br/ccivil_03/_ato2007-2010/2010/lei/l12334.htm" target="_blank" rel="noopener noreferrer">Consultar</a>
-</div>
-</div>
-</div>
-</section>
-
-<section class="alt" id="avaliacao">
-<div class="wrap">
-<div class="eyebrow">Validação acadêmica</div>
-<h2>Ajude a avaliar nosso protótipo</h2>
-<p>Seu feedback permitirá identificar dificuldades e propor melhorias para a apresentação acadêmica.</p>
-<div class="card">
-<form id="formAvaliacao">
-<label for="nota">Facilidade de utilização</label>
-<select id="nota" required>
-<option value="">Selecione uma nota</option>
-<option value="1">1 — Muito difícil</option>
-<option value="2">2 — Difícil</option>
-<option value="3">3 — Regular</option>
-<option value="4">4 — Fácil</option>
-<option value="5">5 — Muito fácil</option>
-</select>
-<label for="comentario">O que podemos melhorar?</label>
-<textarea id="comentario" rows="4" maxlength="1000" placeholder="Escreva sua opinião"></textarea>
-<button class="btn" type="submit">Registrar avaliação</button>
-</form>
-<p id="feedback" aria-live="polite"></p>
-<button class="btn" id="exportar" type="button">Exportar avaliações (CSV)</button>
-<p class="small">As avaliações ficam salvas somente neste navegador. Não são enviadas automaticamente ao grupo.</p>
-</div>
-</div>
-</section>
-</main>
-
-<footer>
-<strong>MINAS SEGURAS</strong>
-<p>Projeto acadêmico • Constituição, Democracia e Meio Ambiente</p>
-<p class="small">Protótipo educacional. Não substitui informações oficiais nem alertas da Defesa Civil.</p>
-</footer>
-
-<script>
-function consultar(){
- const cidade=document.getElementById("cidade").value;
- const resultado=document.getElementById("resultado");
- resultado.hidden=false;
- if(!cidade){
-  resultado.textContent="Selecione um município para continuar.";
-  return;
- }
- resultado.innerHTML="";
- const titulo=document.createElement("h3");
- titulo.textContent="Consulta: "+cidade;
- const aviso=document.createElement("p");
- aviso.textContent="Para verificar barragens, classificações e informações de fiscalização, consulte os sistemas oficiais. A seleção do município não confirma a existência de barragens nem determina risco.";
- const link=document.createElement("a");
- link.href="https://www.gov.br/anm/pt-br";
- link.target="_blank";
- link.rel="noopener noreferrer";
- link.className="btn";
- link.textContent="Acessar Agência Nacional de Mineração";
- resultado.append(titulo,aviso,link);
-}
-const chave="minas_seguras_avaliacoes";
-function carregar(){
- try{return JSON.parse(localStorage.getItem(chave)||"[]")}
- catch{return []}
-}
-document.getElementById("formAvaliacao").addEventListener("submit",function(e){
- e.preventDefault();
- const nota=document.getElementById("nota").value;
- const comentario=document.getElementById("comentario").value.trim();
- const avaliacoes=carregar();
- avaliacoes.push({data:new Date().toISOString(),nota,comentario});
- try{
-  localStorage.setItem(chave,JSON.stringify(avaliacoes));
-  document.getElementById("feedback").textContent="Avaliação registrada neste navegador. Obrigado!";
-  this.reset();
- }catch{
-  document.getElementById("feedback").textContent="Não foi possível salvar. Verifique as configurações do navegador.";
- }
-});
-document.getElementById("exportar").addEventListener("click",function(){
- const dados=carregar();
- if(!dados.length){alert("Nenhuma avaliação registrada neste navegador.");return}
- const linhas=[["Data","Nota","Comentário"],...dados.map(x=>[x.data,x.nota,x.comentario])];
- const csv="\uFEFF"+linhas.map(l=>l.map(v=>'"'+String(v??"").replace(/"/g,'""')+'"').join(";")).join("\r\n");
- const url=URL.createObjectURL(new Blob([csv],{type:"text/csv;charset=utf-8"}));
- const a=document.createElement("a");
- a.href=url;a.download="avaliacoes-minas-seguras.csv";a.click();
- setTimeout(()=>URL.revokeObjectURL(url),1000);
-});
-</script>
-</body>
-</html>
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#071d18"><meta name="description" content="Minas Seguras: transparência e educação sobre barragens de mineração."><title>MINAS SEGURAS 3.0 — Transparência que protege</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="" onerror="this.remove()"><style>
+:root{--bg:#061a16;--surface:#0b2821;--surface2:#11352b;--line:#295246;--green:#9ee4ad;--mint:#d2f4d4;--text:#effaf2;--muted:#a9c3b7;--gold:#d9bc7b}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font:15px/1.6 'DM Sans',Arial,sans-serif}h1,h2,h3,h4,.brand{font-family:Manrope,Arial,sans-serif;line-height:1.18}h1{font-size:clamp(2.7rem,6vw,5.4rem);letter-spacing:-.055em;margin:14px 0 23px;max-width:950px}h2{font-size:clamp(2rem,3.6vw,3.1rem);letter-spacing:-.045em;margin:10px 0 18px}h3{margin:0 0 9px;font-size:1.1rem}p{color:var(--muted)}a{color:inherit}button,input,select,textarea{font:inherit}button{cursor:pointer}.wrap{max-width:1200px;margin:auto;padding:0 25px}.nav{position:sticky;top:0;z-index:1200;background:#071c18ee;backdrop-filter:blur(16px);border-bottom:1px solid #25443a}.navinner{max-width:1200px;margin:auto;padding:14px 25px;display:flex;align-items:center;gap:25px}.brand{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:.08em;white-space:nowrap;text-decoration:none}.brand-icon{display:grid;place-items:center;width:35px;height:35px;background:var(--green);color:#08271a;border-radius:11px;font-size:20px}.links{display:flex;gap:24px;margin-left:auto;align-items:center}.links a{text-decoration:none;color:#c6dbd0;font-size:13px;font-weight:700}.links a:hover{color:var(--green)}.btn{border:1px solid transparent;border-radius:12px;padding:13px 19px;background:var(--green);color:#08291b;font-weight:800;display:inline-flex;align-items:center;justify-content:center;gap:8px;text-decoration:none;transition:transform .2s,background .2s}.btn:hover{transform:translateY(-2px);background:#c4f5c8}.btn-outline{background:#16362ec9;color:var(--text);border-color:#557266}.btn-outline:hover{background:#285043}.btn-small{padding:9px 13px;font-size:12px}.hamburger{display:none;background:transparent;color:white;border:1px solid var(--line);border-radius:10px;padding:7px 11px}.hero{position:relative;min-height:660px;display:flex;align-items:center;overflow:hidden;background:linear-gradient(90deg,#061a16 0%,#061a16e8 37%,#061a1680 100%),linear-gradient(0deg,#061a16 0%,transparent 50%),url('https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=2000&q=85') center/cover}.hero .wrap{width:100%;position:relative;padding-top:55px;padding-bottom:90px}.eyebrow{font-size:11px;letter-spacing:.22em;text-transform:uppercase;font-weight:800;color:var(--green)}.hero p{font-size:18px;max-width:620px;color:#c3d8cb}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.hero-foot{position:absolute;bottom:22px;left:0;right:0}.hero-foot .wrap{padding-top:0;padding-bottom:0}.hero-foot span{font-size:12px;color:#d4e6d7}.section{padding:95px 0}.section.alt{background:#0a231d}.section-lead{max-width:700px;margin-bottom:30px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:19px}.card{background:linear-gradient(145deg,#13382d,#0d2b23);border:1px solid #285244;border-radius:20px;padding:25px;transition:transform .25s,border-color .25s}.card:hover{transform:translateY(-3px);border-color:#69a989}.card p{margin-bottom:0}.photo{width:100%;height:210px;object-fit:cover;border-radius:14px;margin-bottom:18px}.num{font-size:31px;font-family:Manrope;font-weight:800;color:var(--green)}.metric{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin-top:-44px;position:relative;z-index:3}.metric .card{padding:19px 24px;background:#103227;box-shadow:0 20px 50px #0003}.metric small{color:var(--muted);display:block}.toolbar{display:grid;grid-template-columns:2fr 1fr 1fr auto;gap:12px;align-items:end;margin-bottom:16px}.field label{display:block;color:#d7e9dc;font-size:12px;font-weight:700;margin-bottom:6px}.field input,.field select,.field textarea{width:100%;background:#071c18;color:white;border:1px solid #426557;border-radius:11px;padding:13px;outline:none}.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--green)}.map-shell{display:grid;grid-template-columns:1.65fr 1fr;gap:17px}.map-panel{background:#103026;border:1px solid var(--line);border-radius:20px;overflow:hidden;min-height:465px;position:relative}.map{height:465px;background:#133a2d}.map-overlay{position:absolute;z-index:500;left:15px;bottom:15px;background:#09221de8;border:1px solid #4b7060;border-radius:10px;padding:9px 12px;font-size:12px;pointer-events:none}.records{height:465px;overflow:auto;background:#0c2820;border:1px solid var(--line);border-radius:20px;padding:18px}.records h3{margin-bottom:14px}.record{padding:15px;border:1px solid #2a5043;background:#12372b;border-radius:13px;margin-bottom:10px;cursor:pointer;text-align:left;width:100%;color:var(--text)}.record:hover{border-color:var(--green)}.record strong{display:block}.record small{color:var(--muted)}.pill{display:inline-block;border:1px solid #527e69;border-radius:50px;color:#c6efcb;padding:3px 9px;font-size:11px;font-weight:700}.notice{border:1px solid #65735a;background:#293a29;color:#e7e7c8;padding:15px 18px;border-radius:13px;font-size:13px;margin:18px 0}.notice a{color:#d8efb4}.source-links{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}.source-links a{font-size:13px}.feature{display:flex;gap:16px;align-items:flex-start}.feature-icon{background:#2d5a42;color:var(--mint);font-size:22px;min-width:46px;height:46px;border-radius:13px;display:grid;place-items:center}.faq details{border-bottom:1px solid var(--line);padding:16px 0}.faq summary{cursor:pointer;font-weight:800}.faq p{margin-bottom:0}.split{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:center}.feature-photo{height:470px;width:100%;object-fit:cover;border-radius:23px}.stat-note{color:var(--muted);font-size:12px}.footer{padding:38px 0;border-top:1px solid var(--line)}.footerinner{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}.footer small{color:var(--muted)}.reveal{opacity:0;transform:translateY(22px);transition:opacity .7s,transform .7s}.reveal.visible{opacity:1;transform:none}.empty{text-align:center;padding:35px 16px;color:var(--muted)}.empty strong{display:block;color:var(--text);font-size:17px;margin-bottom:8px}.modal{position:fixed;inset:0;z-index:3000;background:#000b;display:none;align-items:center;justify-content:center;padding:18px}.modal.show{display:flex}.modalbox{background:#103027;border:1px solid #547664;border-radius:20px;max-width:600px;width:100%;max-height:85vh;overflow:auto;padding:28px}.modalbox dl{display:grid;grid-template-columns:160px 1fr;gap:9px}.modalbox dt{color:var(--muted)}.modalbox dd{margin:0;overflow-wrap:anywhere}.muted{color:var(--muted)}.tiny{font-size:12px}.loadrow{display:flex;align-items:center;flex-wrap:wrap;gap:12px;margin-top:14px}.filebtn{position:relative;overflow:hidden}.filebtn input{position:absolute;inset:0;opacity:0;cursor:pointer;width:100%}.kbd{font-size:11px;color:#c5d7c8}.leaflet-container{font-family:'DM Sans',Arial,sans-serif}.leaflet-popup-content-wrapper,.leaflet-popup-tip{background:#12372b;color:#fff}.leaflet-popup-content a{color:#a5e7b4}.marker{width:15px;height:15px;border:3px solid #e4ffe9;border-radius:50%;background:#4da97c;box-shadow:0 0 0 5px #4da97c44}.no-map{height:100%;display:grid;place-items:center;text-align:center;padding:30px;color:#d3e9d6}.privacy{font-size:12px;color:var(--muted)}@media(max-width:950px){.toolbar{grid-template-columns:1fr 1fr}.map-shell,.split{grid-template-columns:1fr}.records{height:330px}.grid{grid-template-columns:1fr 1fr}.links{gap:12px}}@media(max-width:650px){.wrap{padding:0 17px}.navinner{padding:12px 17px}.hamburger{display:block;margin-left:auto}.links{display:none;position:absolute;top:64px;left:0;right:0;background:#09251d;padding:18px;flex-direction:column;align-items:stretch;border-bottom:1px solid var(--line)}.links.open{display:flex}.links a{padding:9px}.hero{min-height:590px}.hero p{font-size:15px}.section{padding:65px 0}.grid,.metric,.toolbar{grid-template-columns:1fr}.metric{margin-top:-25px}.metric .card{padding:13px 20px}.metric .num{font-size:25px}.photo{height:190px}.map{height:380px}.map-panel{min-height:380px}.modalbox dl{grid-template-columns:1fr}.feature-photo{height:280px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+</style></head><body>
+<header class="nav"><div class="navinner"><a class="brand" href="#inicio"><span class="brand-icon">◆</span> MINAS SEGURAS</a><button class="hamburger" id="menuBtn" aria-expanded="false" aria-controls="navLinks" aria-label="Abrir menu">☰</button><nav class="links" id="navLinks"><a href="#projeto">O projeto</a><a href="#explorar">Mapa e consulta</a><a href="#direitos">Seus direitos</a><a href="#avaliar">Avaliação</a><a class="btn btn-small" href="#explorar">Explorar dados ↗</a></nav></div></header>
+<main><section class="hero" id="inicio"><div class="wrap"><span class="eyebrow">Tecnologia cívica • Meio ambiente • Minas Gerais</span><h1>Conhecer os riscos.<br><span style="color:var(--green)">Proteger o futuro.</span></h1><p>Informação ambiental mais acessível. Consulte registros públicos de barragens, compreenda seus direitos e participe da construção de comunidades mais informadas.</p><div class="actions"><a class="btn" href="#explorar">Explorar mapa ↗</a><a class="btn btn-outline" href="#projeto">Conheça o projeto</a></div></div><div class="hero-foot"><div class="wrap"><span>◉ Protótipo acadêmico — não é um sistema de alerta ou monitoramento em tempo real</span></div></div></section>
+<div class="wrap"><div class="metric"><div class="card"><div class="num" id="totalMetric">—</div><small>Registros importados</small></div><div class="card"><div class="num" id="cityMetric">—</div><small>Municípios nos dados</small></div><div class="card"><div class="num" id="geoMetric">—</div><small>Registros com coordenadas</small></div></div></div>
+<section class="section" id="projeto"><div class="wrap"><div class="section-lead reveal"><div class="eyebrow">Nossa missão</div><h2>Transparência ambiental começa com informação compreensível.</h2><p>Os dados públicos existem, mas podem ser difíceis de encontrar e interpretar. O MINAS SEGURAS reúne caminhos de consulta e explica conceitos de segurança de barragens em linguagem acessível.</p></div><div class="grid"><article class="card reveal"><img class="photo" loading="lazy" src="https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=900&q=80" alt="Paisagem de floresta"><span class="eyebrow">01 / Informação</span><h3>Consulta acessível</h3><p>Pesquisa por nome, município e classificação a partir de arquivo público da ANM.</p></article><article class="card reveal"><img class="photo" loading="lazy" src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=900&q=80" alt="Paisagem natural"><span class="eyebrow">02 / Transparência</span><h3>Dados com origem</h3><p>As fichas distinguem informação importada, campos ausentes e links oficiais para verificação.</p></article><article class="card reveal"><img class="photo" loading="lazy" src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=900&q=80" alt="Floresta iluminada"><span class="eyebrow">03 / Cidadania</span><h3>Direitos na prática</h3><p>Entenda o direito à informação, à proteção ambiental e os caminhos de participação.</p></article></div></div></section>
+<section class="section alt" id="explorar"><div class="wrap"><div class="eyebrow">Geointeligência cidadã</div><h2>Mapa e consulta de barragens</h2><p class="section-lead">Importe um arquivo CSV exportado da fonte oficial para explorar os registros. Os dados são processados neste navegador e não são enviados para nossos servidores.</p><div class="notice"><strong>Importante:</strong> a base não é atualizada automaticamente. O mapa só mostra registros efetivamente importados, com coordenadas válidas. Categoria de risco (CRI), dano potencial associado (DPA) e nível de emergência são conceitos diferentes. Nenhum indicador isolado prevê rompimentos.</div><div class="toolbar"><div class="field"><label for="search">Buscar barragem ou empreendedor</label><input id="search" placeholder="Digite um nome..." autocomplete="off"></div><div class="field"><label for="municipio">Município</label><select id="municipio"><option value="">Todos os municípios</option></select></div><div class="field"><label for="risco">Categoria de risco</label><select id="risco"><option value="">Todas</option></select></div><button class="btn" id="resetBtn">Limpar</button></div><div class="map-shell"><div class="map-panel"><div id="map" class="map" role="region" aria-label="Mapa de barragens com registros importados"></div><div class="map-overlay" id="mapStatus">Nenhum registro oficial carregado</div></div><div class="records"><h3>Registros encontrados <span class="pill" id="count">0</span></h3><div id="recordList" class="empty"><strong>Aguardando dados oficiais</strong>Importe o CSV do SIGBM para visualizar barragens nesta lista e no mapa.</div></div></div><div class="loadrow"><label class="btn filebtn">⬆ Importar CSV oficial<input id="csvFile" type="file" accept=".csv,text/csv,text/plain" aria-label="Selecionar arquivo CSV do SIGBM"></label><button class="btn btn-outline" id="clearData">Remover dados</button><span class="kbd" id="importStatus" role="status">Nenhum arquivo importado</span></div><p class="stat-note">Compatibilidade: CSV delimitado por ponto e vírgula ou vírgula, UTF-8 ou Latin-1. O importador reconhece nomes comuns de colunas; dependendo do formato exportado pela ANM, pode ser necessário adaptar o mapeamento. Limite recomendado: 15 MB. Arquivos não ficam armazenados após fechar ou recarregar a página.</p><div class="source-links"><a class="btn btn-outline btn-small" href="https://sigbm.anm.gov.br/publico" target="_blank" rel="noopener">SIGBM público ↗</a><a class="btn btn-outline btn-small" href="https://dadosabertos.anm.gov.br/SIGBM" target="_blank" rel="noopener">Dados abertos ANM ↗</a><a class="btn btn-outline btn-small" href="https://www.gov.br/anm/pt-br/assuntos/acesso-a-sistemas/sistema-integrado-de-gestao-de-barragens-de-mineracao-sigbm-versao-publica" target="_blank" rel="noopener">Como consultar ↗</a></div></div></section>
+<section class="section" id="entender"><div class="wrap split"><div class="reveal"><span class="eyebrow">Entenda os indicadores</span><h2>Dados técnicos, explicados sem complicação.</h2><div class="feature"><div class="feature-icon">◈</div><div><h3>Categoria de risco (CRI)</h3><p>Classificação que considera fatores técnicos, estado de conservação e aspectos de segurança conforme critérios oficiais.</p></div></div><div class="feature"><div class="feature-icon">◉</div><div><h3>Dano potencial associado (DPA)</h3><p>Expressa a magnitude potencial das consequências de um eventual acidente, independentemente da probabilidade de ocorrência.</p></div></div><div class="feature"><div class="feature-icon">⚑</div><div><h3>Nível de emergência</h3><p>Informação distinta de CRI e DPA, que deve ser conferida diretamente nos canais oficiais e comunicados da Defesa Civil.</p></div></div></div><img class="feature-photo reveal" loading="lazy" src="https://images.unsplash.com/photo-1511497584788-876760111969?auto=format&fit=crop&w=1200&q=85" alt="Floresta vista de baixo"></div></section>
+<section class="section alt" id="direitos"><div class="wrap"><div class="eyebrow">Central de direitos</div><h2>Constituição, democracia e meio ambiente.</h2><p class="section-lead">A informação pública permite acompanhar a fiscalização e exercer direitos de cidadania. Consulte sempre os textos legais atualizados.</p><div class="grid"><article class="card"><span class="eyebrow">Constituição Federal</span><h3>Art. 225 — Meio ambiente</h3><p>Reconhece o direito ao meio ambiente ecologicamente equilibrado e estabelece deveres de proteção.</p><a href="https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm" target="_blank" rel="noopener">Ler Constituição ↗</a></article><article class="card"><span class="eyebrow">Lei 12.527/2011</span><h3>Acesso à informação</h3><p>Prevê mecanismos para solicitar informações públicas, respeitadas as hipóteses legais de restrição.</p><a href="https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2011/lei/l12527.htm" target="_blank" rel="noopener">Ler legislação ↗</a></article><article class="card"><span class="eyebrow">Lei 12.334/2010</span><h3>Segurança de barragens</h3><p>Institui a Política Nacional de Segurança de Barragens, com alterações posteriores.</p><a href="https://www.planalto.gov.br/ccivil_03/_ato2007-2010/2010/lei/l12334.htm" target="_blank" rel="noopener">Ler legislação ↗</a></article></div><div class="faq" style="margin-top:38px"><h3>Dúvidas frequentes</h3><details><summary>Quem fiscaliza barragens de mineração?</summary><p>A Agência Nacional de Mineração exerce competências de fiscalização da segurança de barragens de mineração. Consulte o SIGBM para dados de estruturas específicas.</p></details><details><summary>Uma barragem com DPA alto está prestes a romper?</summary><p>Não. DPA se refere à gravidade potencial de consequências, não a uma previsão de rompimento. Consulte as informações oficiais de segurança e emergência.</p></details><details><summary>Como solicitar informações ou comunicar uma preocupação?</summary><p>Use os canais oficiais da ANM e da ouvidoria pública. Em situação de emergência, siga as orientações da Defesa Civil e os alertas oficiais, sem depender deste site.</p></details></div><div class="source-links"><a class="btn btn-outline btn-small" href="https://falabr.cgu.gov.br/" target="_blank" rel="noopener">Fala.BR — acesso à informação ↗</a><a class="btn btn-outline btn-small" href="https://www.gov.br/anm/pt-br/assuntos/barragens/legislacao" target="_blank" rel="noopener">Normas ANM ↗</a></div></div></section>
+<section class="section" id="avaliar"><div class="wrap split"><div><span class="eyebrow">Pesquisa acadêmica</span><h2>Ajude a validar o MINAS SEGURAS.</h2><p>O projeto faz parte de uma atividade acadêmica sobre Constituição, Democracia e Meio Ambiente. Seu feedback ajuda a medir clareza e usabilidade.</p><div class="notice">Este formulário funciona localmente. As respostas são salvas apenas neste navegador e devem ser exportadas manualmente para compor o relatório acadêmico. Não há coleta centralizada nem envio automático.</div></div><div class="card"><form id="feedbackForm"><div class="field"><label for="nota">Facilidade de uso</label><select id="nota" required><option value="">Selecione uma nota</option><option value="1">1 — Muito difícil</option><option value="2">2 — Difícil</option><option value="3">3 — Regular</option><option value="4">4 — Fácil</option><option value="5">5 — Muito fácil</option></select></div><div class="field"><label for="util">As informações foram claras?</label><select id="util" required><option value="">Selecione</option><option>Sim</option><option>Parcialmente</option><option>Não</option></select></div><div class="field"><label for="comentario">O que podemos melhorar?</label><textarea id="comentario" rows="4" maxlength="1000" placeholder="Conte sua experiência (não inclua dados pessoais)"></textarea></div><button class="btn" type="submit">Salvar avaliação</button><p class="privacy" id="feedbackMsg" role="status"></p></form><button class="btn btn-outline btn-small" id="exportBtn">Exportar avaliações CSV</button></div></div></section></main>
+<footer class="footer"><div class="wrap footerinner"><div><a class="brand" href="#inicio"><span class="brand-icon">◆</span> MINAS SEGURAS</a><small>Projeto acadêmico independente. Não afiliado à ANM ou à Defesa Civil.</small></div><small>Fontes: ANM / SIGBM e legislação federal • Protótipo 3.0<br>Não é sistema de alerta, certificação ou laudo de segurança.</small></div></footer>
+<div class="modal" id="detailModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><div class="modalbox"><div style="display:flex;justify-content:space-between;gap:12px;align-items:center"><h2 id="modalTitle" style="font-size:24px">Detalhes</h2><button class="btn btn-outline btn-small" id="closeModal">Fechar ✕</button></div><div id="modalBody"></div><p class="tiny muted">Informações extraídas do arquivo importado. Confira a fonte oficial e a data da exportação.</p><a href="https://sigbm.anm.gov.br/publico" target="_blank" rel="noopener" class="btn btn-small">Conferir SIGBM ↗</a></div></div>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script><script>
+'use strict';
+const $=id=>document.getElementById(id);const ANM='https://sigbm.anm.gov.br/publico';let data=[],filtered=[],map=null,layer=null,markers=[];
+$('menuBtn').onclick=()=>{const open=$('navLinks').classList.toggle('open');$('menuBtn').setAttribute('aria-expanded',String(open))};document.querySelectorAll('#navLinks a').forEach(a=>a.onclick=()=>{$('navLinks').classList.remove('open');$('menuBtn').setAttribute('aria-expanded','false')});
+if('IntersectionObserver' in window){const obs=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target)}}),{threshold:.08});document.querySelectorAll('.reveal').forEach(x=>obs.observe(x))}else document.querySelectorAll('.reveal').forEach(x=>x.classList.add('visible'));
+function initMap(){if(!window.L){$('map').innerHTML='<div class="no-map">O mapa não pôde carregar. Verifique a conexão com a internet. A lista de registros continua disponível.</div>';return}map=L.map('map',{scrollWheelZoom:false}).setView([-19.9,-44.0],8);L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap contributors'}).addTo(map);layer=L.layerGroup().addTo(map)}initMap();
+const norm=s=>String(s??'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]/g,'');
+const col=(row,aliases)=>{for(const alias of aliases){const k=Object.keys(row).find(x=>norm(x)===norm(alias));if(k&&String(row[k]??'').trim())return String(row[k]).trim()}return ''};
+function coord(v,lat){if(!v)return null;let s=String(v).trim().replace(/\s/g,'');if(/^-?\d{1,3},\d{1,10}$/.test(s))s=s.replace(',','.');let n=Number(s);return Number.isFinite(n)&&n>=(lat?-90:-180)&&n<=(lat?90:180)?n:null}
+function parseCSV(text){text=text.replace(/^\uFEFF/,'');const first=text.split(/\r?\n/,1)[0];const delim=(first.match(/;/g)||[]).length>=(first.match(/,/g)||[]).length?';':',';let rows=[],row=[],cell='',quoted=false;for(let i=0;i<text.length;i++){const c=text[i];if(c==='"'){if(quoted&&text[i+1]==='"'){cell+='"';i++}else quoted=!quoted}else if(c===delim&&!quoted){row.push(cell);cell=''}else if((c==='\n'||c==='\r')&&!quoted){if(c==='\r'&&text[i+1]==='\n')i++;row.push(cell);if(row.some(v=>v.trim()))rows.push(row);row=[];cell=''}else cell+=c}row.push(cell);if(row.some(v=>v.trim()))rows.push(row);if(rows.length<2)return[];const headers=rows.shift().map(x=>x.trim());return rows.map(r=>Object.fromEntries(headers.map((h,i)=>[h,r[i]??''])))}
+function toRecord(r,i){const name=col(r,['Nome da Barragem','Nome Barragem','Nome','Barragem','NOME_BARRAGEM','NOM_BARRAGEM']);const city=col(r,['Município','Municipio','Nome Município','Nome Municipio','MUNICIPIO','Município/UF']);const uf=col(r,['UF','Estado','Sigla UF']);const owner=col(r,['Empreendedor','Nome do Empreendedor','Empresa','Razão Social','Razao Social']);const cri=col(r,['Categoria de Risco','Categoria Risco','CRI','Classificação CRI','Classificacao CRI']);const dpa=col(r,['Dano Potencial Associado','DPA','Classificação DPA','Classificacao DPA']);const emergency=col(r,['Nível de Emergência','Nivel de Emergencia','Nível Emergência','Nivel Emergencia']);const lat=coord(col(r,['Latitude','LATITUDE','LAT','Latitude Decimal','Latitude (decimal)']),true);const lng=coord(col(r,['Longitude','LONGITUDE','LON','LONG','Longitude Decimal','Longitude (decimal)']),false);return {id:i,name,city,uf,owner,cri,dpa,emergency,lat,lng}};
+function esc(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+function populate(){const cities=[...new Set(data.map(x=>x.city).filter(Boolean))].sort((a,b)=>a.localeCompare(b,'pt-BR'));const risks=[...new Set(data.map(x=>x.cri).filter(Boolean))].sort();$('municipio').innerHTML='<option value="">Todos os municípios</option>'+cities.map(x=>`<option value="${esc(x)}">${esc(x)}</option>`).join('');$('risco').innerHTML='<option value="">Todas</option>'+risks.map(x=>`<option value="${esc(x)}">${esc(x)}</option>`).join('');$('totalMetric').textContent=data.length.toLocaleString('pt-BR');$('cityMetric').textContent=cities.length.toLocaleString('pt-BR');$('geoMetric').textContent=data.filter(x=>x.lat!==null&&x.lng!==null).length.toLocaleString('pt-BR');apply()}
+function apply(){const q=norm($('search').value),city=$('municipio').value,risk=$('risco').value;filtered=data.filter(x=>(!q||norm([x.name,x.owner,x.city].join(' ')).includes(q))&&(!city||x.city===city)&&(!risk||x.cri===risk));$('count').textContent=filtered.length.toLocaleString('pt-BR');const list=$('recordList');list.className='';list.innerHTML='';if(!filtered.length){list.className='empty';list.innerHTML=data.length?'<strong>Nenhum resultado</strong>Altere os filtros para pesquisar novamente.':'<strong>Aguardando dados oficiais</strong>Importe o CSV do SIGBM para visualizar registros nesta lista e no mapa.'}else{const shown=filtered.slice(0,150);shown.forEach(x=>{const b=document.createElement('button');b.className='record';b.innerHTML=`<strong>${esc(x.name||'Barragem sem nome informado')}</strong><small>${esc(x.city||'Município não informado')}${x.uf?' / '+esc(x.uf):''}</small><br><span class="pill">CRI: ${esc(x.cri||'não informado')}</span> <span class="pill">DPA: ${esc(x.dpa||'não informado')}</span>`;b.onclick=()=>showDetail(x);list.append(b)});if(filtered.length>shown.length){const p=document.createElement('p');p.className='tiny muted';p.textContent=`Exibindo os primeiros ${shown.length} registros na lista. Refine os filtros para encontrar outros.`;list.append(p)}}renderMarkers()}
+function renderMarkers(){if(!map||!layer){$('mapStatus').textContent='Mapa indisponível';return}layer.clearLayers();markers=[];const geo=filtered.filter(x=>x.lat!==null&&x.lng!==null);geo.slice(0,3000).forEach(x=>{const m=L.marker([x.lat,x.lng],{icon:L.divIcon({className:'',html:'<div class="marker"></div>',iconSize:[19,19],iconAnchor:[9,9]})});m.bindPopup(`<strong>${esc(x.name||'Barragem')}</strong><br>${esc(x.city||'Município não informado')}<br>CRI: ${esc(x.cri||'não informado')}<br>DPA: ${esc(x.dpa||'não informado')}`);m.on('click',()=>showDetail(x));m.addTo(layer);markers.push(m)});$('mapStatus').textContent=`${geo.length.toLocaleString('pt-BR')} registro(s) com coordenadas nos filtros${geo.length>3000?' • primeiros 3.000 marcadores':''}`;if(markers.length){const bounds=L.featureGroup(markers).getBounds();map.fitBounds(bounds.pad(.15),{maxZoom:12})}else map.setView([-19.9,-44],8)}
+function showDetail(x){$('modalTitle').textContent=x.name||'Barragem';const entries=[['Município',x.city],['UF',x.uf],['Empreendedor',x.owner],['Categoria de risco (CRI)',x.cri],['Dano potencial (DPA)',x.dpa],['Nível de emergência',x.emergency],['Latitude',x.lat],['Longitude',x.lng]];$('modalBody').innerHTML='<dl>'+entries.map(([k,v])=>`<dt>${esc(k)}</dt><dd>${esc(v===null||v===''?'Não informado no arquivo':v)}</dd>`).join('')+'</dl>';$('detailModal').classList.add('show')}
+$('closeModal').onclick=()=>$('detailModal').classList.remove('show');$('detailModal').onclick=e=>{if(e.target===$('detailModal'))$('detailModal').classList.remove('show')};document.addEventListener('keydown',e=>{if(e.key==='Escape')$('detailModal').classList.remove('show')});['search','municipio','risco'].forEach(id=>$(id).addEventListener(id==='search'?'input':'change',apply));$('resetBtn').onclick=()=>{$('search').value='';$('municipio').value='';$('risco').value='';apply()};$('clearData').onclick=()=>{data=[];$('csvFile').value='';$('importStatus').textContent='Dados removidos';populate()};
+$('csvFile').onchange=async e=>{const f=e.target.files?.[0];if(!f)return;if(f.size>15*1024*1024){$('importStatus').textContent='Arquivo maior que 15 MB';return}try{let buf=await f.arrayBuffer(),txt=new TextDecoder('utf-8',{fatal:true}).decode(buf);let rows=parseCSV(txt);if(rows.length===0)throw Error('Arquivo vazio ou formato não reconhecido');let mapped=rows.map(toRecord).filter(x=>x.name||x.city);if(!mapped.length)throw Error('Não foram reconhecidas colunas de nome ou município');data=mapped;$('search').value='';populate();$('importStatus').textContent=`${mapped.length.toLocaleString('pt-BR')} registros importados de ${f.name} • ${new Date().toLocaleString('pt-BR')}`;}catch(err){try{let txt=new TextDecoder('windows-1252').decode(await f.arrayBuffer());let mapped=parseCSV(txt).map(toRecord).filter(x=>x.name||x.city);if(!mapped.length)throw Error('Colunas não reconhecidas');data=mapped;$('search').value='';populate();$('importStatus').textContent=`${mapped.length} registros importados de ${f.name} (Windows-1252)`}catch{$('importStatus').textContent='Não foi possível ler este CSV. Confira o formato e os cabeçalhos.';console.warn(err)}}};
+const feedbackKey='minas-seguras-feedback-v3';function getFeedback(){try{return JSON.parse(localStorage.getItem(feedbackKey)||'[]')}catch{return []}}$('feedbackForm').onsubmit=e=>{e.preventDefault();const values=getFeedback();values.push({data:new Date().toISOString(),nota:$('nota').value,clareza:$('util').value,comentario:$('comentario').value.trim()});try{localStorage.setItem(feedbackKey,JSON.stringify(values));$('feedbackMsg').textContent='Avaliação salva neste navegador. Obrigado!';$('feedbackForm').reset()}catch{$('feedbackMsg').textContent='Não foi possível salvar neste navegador.'}};$('exportBtn').onclick=()=>{const rows=getFeedback();if(!rows.length){alert('Ainda não há avaliações salvas neste navegador.');return}const csv='\uFEFF'+[['Data','Nota','Clareza','Comentário'],...rows.map(x=>[x.data,x.nota,x.clareza,x.comentario])].map(r=>r.map(v=>'"'+String(v??'').replace(/"/g,'""')+'"').join(';')).join('\r\n');const url=URL.createObjectURL(new Blob([csv],{type:'text/csv;charset=utf-8'}));const a=document.createElement('a');a.href=url;a.download='minas-seguras-avaliacoes.csv';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000)};
+</script></body></html>
