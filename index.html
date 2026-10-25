@@ -1,0 +1,241 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MINAS SEGURAS | Transparência Ambiental</title>
+<style>
+:root {
+  --bg:#071b17;
+  --panel:#102b25;
+  --green:#7cdda7;
+  --text:#edf7f0;
+  --muted:#a6bcb0;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+header{position:sticky;top:0;z-index:10;background:#071b17ed;border-bottom:1px solid #29483d}
+nav{max-width:1150px;margin:auto;padding:17px 22px;display:flex;justify-content:space-between;align-items:center;gap:15px;flex-wrap:wrap}
+.logo{font-size:21px;font-weight:900;letter-spacing:1px;color:var(--green)}
+nav a{color:#e5f3e9;text-decoration:none;margin:0 9px;font-size:14px}
+nav a:hover{color:var(--green)}
+.hero{min-height:520px;display:flex;align-items:center;padding:75px 25px;background:linear-gradient(90deg,#061b17f5,#061b1790),url('https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=1600&q=85') center/cover}
+.wrap{max-width:1150px;margin:auto;width:100%}
+.eyebrow{color:var(--green);font-weight:bold;text-transform:uppercase;letter-spacing:2px;font-size:12px}
+h1{font-size:clamp(38px,6vw,70px);line-height:1.08;max-width:850px;margin:16px 0}
+h2{font-size:clamp(26px,4vw,38px);line-height:1.2}
+p{color:var(--muted)}
+.hero p{max-width:620px;font-size:18px}
+.btn{display:inline-block;border:0;border-radius:9px;padding:13px 22px;background:var(--green);color:#092119;font-weight:bold;text-decoration:none;cursor:pointer}
+.btn:hover{background:#b0f5c9}
+section{padding:75px 22px}
+.alt{background:#0b231d}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.card{background:var(--panel);border:1px solid #2b4a3c;border-radius:15px;padding:25px}
+.card h3{color:#eaf9ed}
+.card img{width:100%;height:190px;object-fit:cover;border-radius:10px}
+.tag{color:var(--green);font-size:12px;font-weight:bold;text-transform:uppercase}
+input,select,textarea{width:100%;padding:13px;margin:8px 0 16px;border-radius:8px;border:1px solid #456458;background:#071b17;color:white;font:inherit}
+label{font-weight:bold;font-size:14px}
+.result{margin-top:15px;padding:18px;background:#183a30;border-radius:10px}
+footer{text-align:center;padding:30px;border-top:1px solid #2b4a3c;color:var(--muted)}
+.small{font-size:13px}
+@media(max-width:750px){
+ .grid{grid-template-columns:1fr}
+ nav{justify-content:center;text-align:center}
+ nav div:last-child{display:flex;flex-wrap:wrap;justify-content:center}
+ nav a{margin:5px}
+ section{padding:50px 18px}
+ .hero{min-height:460px}
+}
+</style>
+</head>
+<body>
+
+<header>
+<nav>
+<div class="logo">◆ MINAS SEGURAS</div>
+<div>
+<a href="#inicio">Início</a>
+<a href="#problema">O problema</a>
+<a href="#consulta">Consultar</a>
+<a href="#direitos">Direitos</a>
+<a href="#avaliacao">Avaliar</a>
+</div>
+</nav>
+</header>
+
+<main>
+<section class="hero" id="inicio">
+<div class="wrap">
+<div class="eyebrow">Constituição • Democracia • Meio Ambiente</div>
+<h1>Informação que protege. Transparência que transforma.</h1>
+<p>Uma plataforma educacional para facilitar o acesso às informações sobre barragens de mineração, fiscalização ambiental e direitos das comunidades de Minas Gerais.</p>
+<a class="btn" href="#consulta">Explorar plataforma →</a>
+</div>
+</section>
+
+<section id="problema">
+<div class="wrap">
+<div class="eyebrow">Por que existimos?</div>
+<h2>O direito à informação também protege vidas.</h2>
+<p>Informações sobre barragens podem estar distribuídas em diferentes sistemas e documentos técnicos. Nosso projeto busca tornar esse conteúdo mais acessível e compreensível.</p>
+<div class="grid">
+<div class="card">
+<img src="https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=700&q=80" alt="Floresta">
+<h3>Proteção ambiental</h3>
+<p>A prevenção de danos ambientais depende de fiscalização, responsabilidade e participação social.</p>
+</div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=700&q=80" alt="Paisagem natural">
+<h3>Transparência</h3>
+<p>O cidadão deve conseguir encontrar informações públicas e compreender o significado dos dados divulgados.</p>
+</div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=700&q=80" alt="Natureza">
+<h3>Participação democrática</h3>
+<p>Comunidades informadas podem acompanhar políticas públicas e cobrar medidas dos órgãos responsáveis.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section class="alt" id="consulta">
+<div class="wrap">
+<div class="eyebrow">Consulta pública</div>
+<h2>Pesquise informações sobre barragens</h2>
+<p>Selecione um município para acessar fontes oficiais de pesquisa. Esta primeira versão não apresenta classificações de risco em tempo real.</p>
+<div class="card">
+<label for="cidade">Município de interesse</label>
+<select id="cidade">
+<option value="">Selecione um município</option>
+<option>Brumadinho</option>
+<option>Betim</option>
+<option>Nova Lima</option>
+<option>Itabirito</option>
+<option>Mariana</option>
+<option>Ouro Preto</option>
+</select>
+<button class="btn" onclick="consultar()">Consultar município</button>
+<div id="resultado" class="result" hidden aria-live="polite"></div>
+</div>
+</div>
+</section>
+
+<section id="direitos">
+<div class="wrap">
+<div class="eyebrow">Fundamentação jurídica</div>
+<h2>Conheça seus direitos ambientais</h2>
+<div class="grid">
+<div class="card">
+<div class="tag">Constituição Federal</div>
+<h3>Artigo 225</h3>
+<p>Estabelece o direito ao meio ambiente ecologicamente equilibrado e o dever de protegê-lo.</p>
+<a class="btn" href="https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm" target="_blank" rel="noopener noreferrer">Consultar</a>
+</div>
+<div class="card">
+<div class="tag">Lei 12.527/2011</div>
+<h3>Acesso à Informação</h3>
+<p>Regulamenta o direito de acesso às informações públicas e estabelece mecanismos de transparência.</p>
+<a class="btn" href="https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2011/lei/l12527.htm" target="_blank" rel="noopener noreferrer">Consultar</a>
+</div>
+<div class="card">
+<div class="tag">Lei 12.334/2010</div>
+<h3>Segurança de Barragens</h3>
+<p>Estabelece a Política Nacional de Segurança de Barragens, posteriormente alterada por outras normas.</p>
+<a class="btn" href="https://www.planalto.gov.br/ccivil_03/_ato2007-2010/2010/lei/l12334.htm" target="_blank" rel="noopener noreferrer">Consultar</a>
+</div>
+</div>
+</div>
+</section>
+
+<section class="alt" id="avaliacao">
+<div class="wrap">
+<div class="eyebrow">Validação acadêmica</div>
+<h2>Ajude a avaliar nosso protótipo</h2>
+<p>Seu feedback permitirá identificar dificuldades e propor melhorias para a apresentação acadêmica.</p>
+<div class="card">
+<form id="formAvaliacao">
+<label for="nota">Facilidade de utilização</label>
+<select id="nota" required>
+<option value="">Selecione uma nota</option>
+<option value="1">1 — Muito difícil</option>
+<option value="2">2 — Difícil</option>
+<option value="3">3 — Regular</option>
+<option value="4">4 — Fácil</option>
+<option value="5">5 — Muito fácil</option>
+</select>
+<label for="comentario">O que podemos melhorar?</label>
+<textarea id="comentario" rows="4" maxlength="1000" placeholder="Escreva sua opinião"></textarea>
+<button class="btn" type="submit">Registrar avaliação</button>
+</form>
+<p id="feedback" aria-live="polite"></p>
+<button class="btn" id="exportar" type="button">Exportar avaliações (CSV)</button>
+<p class="small">As avaliações ficam salvas somente neste navegador. Não são enviadas automaticamente ao grupo.</p>
+</div>
+</div>
+</section>
+</main>
+
+<footer>
+<strong>MINAS SEGURAS</strong>
+<p>Projeto acadêmico • Constituição, Democracia e Meio Ambiente</p>
+<p class="small">Protótipo educacional. Não substitui informações oficiais nem alertas da Defesa Civil.</p>
+</footer>
+
+<script>
+function consultar(){
+ const cidade=document.getElementById("cidade").value;
+ const resultado=document.getElementById("resultado");
+ resultado.hidden=false;
+ if(!cidade){
+  resultado.textContent="Selecione um município para continuar.";
+  return;
+ }
+ resultado.innerHTML="";
+ const titulo=document.createElement("h3");
+ titulo.textContent="Consulta: "+cidade;
+ const aviso=document.createElement("p");
+ aviso.textContent="Para verificar barragens, classificações e informações de fiscalização, consulte os sistemas oficiais. A seleção do município não confirma a existência de barragens nem determina risco.";
+ const link=document.createElement("a");
+ link.href="https://www.gov.br/anm/pt-br";
+ link.target="_blank";
+ link.rel="noopener noreferrer";
+ link.className="btn";
+ link.textContent="Acessar Agência Nacional de Mineração";
+ resultado.append(titulo,aviso,link);
+}
+const chave="minas_seguras_avaliacoes";
+function carregar(){
+ try{return JSON.parse(localStorage.getItem(chave)||"[]")}
+ catch{return []}
+}
+document.getElementById("formAvaliacao").addEventListener("submit",function(e){
+ e.preventDefault();
+ const nota=document.getElementById("nota").value;
+ const comentario=document.getElementById("comentario").value.trim();
+ const avaliacoes=carregar();
+ avaliacoes.push({data:new Date().toISOString(),nota,comentario});
+ try{
+  localStorage.setItem(chave,JSON.stringify(avaliacoes));
+  document.getElementById("feedback").textContent="Avaliação registrada neste navegador. Obrigado!";
+  this.reset();
+ }catch{
+  document.getElementById("feedback").textContent="Não foi possível salvar. Verifique as configurações do navegador.";
+ }
+});
+document.getElementById("exportar").addEventListener("click",function(){
+ const dados=carregar();
+ if(!dados.length){alert("Nenhuma avaliação registrada neste navegador.");return}
+ const linhas=[["Data","Nota","Comentário"],...dados.map(x=>[x.data,x.nota,x.comentario])];
+ const csv="\uFEFF"+linhas.map(l=>l.map(v=>'"'+String(v??"").replace(/"/g,'""')+'"').join(";")).join("\r\n");
+ const url=URL.createObjectURL(new Blob([csv],{type:"text/csv;charset=utf-8"}));
+ const a=document.createElement("a");
+ a.href=url;a.download="avaliacoes-minas-seguras.csv";a.click();
+ setTimeout(()=>URL.revokeObjectURL(url),1000);
+});
+</script>
+</body>
+</html>
